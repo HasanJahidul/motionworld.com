@@ -1,0 +1,36 @@
+.player-wrapper {
+	position: relative;
+	padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+	align-items: center;
+	justify-content: center;
+}
+
+.react-player {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/*button with gradiant border*/
+.btn-gradient-border {
+    border-image: radial-gradient(rgb(243, 204, 5), rgb(246,74,62)) 1;
+    
+	background-color: transparent;
+	color: #ffffff;
+	padding: 10px 28px;
+	font-size: 16px;
+    font-weight:900;
+	cursor: pointer;
+	transition: 256ms all;
+    box-shadow: 0 0 1px #eee;
+    border-radius: 10px;
+}
+.btn-gradient-border:hover {
+	background-image: linear-gradient(
+		to right,
+		#ff4e50 0%,
+		#f9d423 51%,
+		#ff4e50 300%
+	);
+	color: #fff;
+}
