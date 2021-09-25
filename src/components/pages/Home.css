@@ -11,19 +11,20 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
 /*button with gradiant border*/
 .btn-gradient-border {
-    border-image: radial-gradient(rgb(243, 204, 5), rgb(246,74,62)) 1;
-    
+	border-color: radial-gradient(rgb(243, 204, 5), rgb(246, 74, 62)) 14% stretch;
 	background-color: transparent;
 	color: #ffffff;
-	padding: 10px 28px;
+	/* padding: 10px 28px; */
 	font-size: 16px;
-    font-weight:900;
+	font-weight: 900;
 	cursor: pointer;
-	transition: 256ms all;
-    box-shadow: 0 0 1px #eee;
-    border-radius: 10px;
+	transition: 0.5s ease;
+	border-radius: 50px;
+	height: 50px;
+	width: 180px;
 }
 .btn-gradient-border:hover {
 	background-image: linear-gradient(
@@ -32,5 +33,40 @@
 		#f9d423 51%,
 		#ff4e50 300%
 	);
-	color: #fff;
+
+	color: #ffffff;
+	border-radius: 50px;
+}
+.homefooter {
+	width: 100%;
+	height: 55px;
+	background: #282428;
+}
+.btn-group {
+	padding-bottom: 40px;
+}
+.boxbtn {
+	display: grid;
+	grid-template-columns: 90px 100px;
+	grid-gap: 20px;
+	height: 55px;
+	width: 100px;
+	font-size: 16px;
+	font-weight: 900;
+	cursor: pointer;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 55px;
+	margin-left: 90%;
+	grid-gap: 0px;
+	transform: translate(-150%, -0%);
+}
+
+.btn-yellow-box {
+	background-color: #ffd400;
+	
+}
+
+.btn-white-box {
+	background-color: #eef2f6;
 }

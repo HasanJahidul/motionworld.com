@@ -14,12 +14,11 @@ nav {
 	width: 100%;
 }
 img.logo {
-	
 	padding: 0 200px;
-    max-height: 90px;
+	max-height: 90px;
 }
-biglogo:hover{
-    max-height:110px;
+biglogo:hover {
+	max-height: 110px;
 }
 nav ul {
 	float: right;
@@ -40,13 +39,18 @@ nav ul li a {
 }
 
 a:hover {
-    font-size: 20px;
+	font-size: 20px;
 	color: #ffd400;
+	text-decoration: underline;
+
 	transition: 0.5s;
+	text-underline-offset: 10px;
+	text-decoration-color: #2596be;
+	text-decoration-thickness: 3px;
 }
 .checkbtn {
 	font-size: 30px;
-	color: white;
+	color: black;
 	float: right;
 	line-height: 80px;
 	margin-right: 40px;
@@ -101,5 +105,3 @@ a:hover {
     background-size: cover;
     height: calc(100vh - 80px);
   } */
-
-  
