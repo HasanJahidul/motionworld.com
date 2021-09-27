@@ -40,6 +40,7 @@
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-55%);
+	z-index: 100;
 }
 #work  .player-wrapper .btn-grad{
 	z-index: 1;
@@ -87,17 +88,16 @@
 	display: grid;
 	grid-template-columns: repeat(var(--num-cols), 320px);
 	grid-auto-rows: var(--row-height);
-	z-index: 999;
+	z-index: 99;
 	position:absolute;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
-	-webkit-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
 }
 .video-grid .player {
 	width: 100%;
 	height: auto;
+	z-index: 999;
 }
 .page-title{
 	z-index: 1;

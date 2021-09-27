@@ -11,7 +11,7 @@ export default function Work() {
     return (
 			<section id="work">
 				<div className="page-title">
-					<h5> work</h5>
+					<h5> WORK</h5>
 				</div>
 				<div id="wave" className="player-wrapper">
 					<div className="video-grid">
@@ -30,11 +30,10 @@ export default function Work() {
 							);
 						})}
 					</div>
-					<Link to="/work" className="btn-grad">
-						
-						{/* <button className="btn-grad">See All</button> */}
-						see all
+					<Link to="/work">
+						<button className="btn-grad">See All</button>
 					</Link>
+					{/* <button className="btn-grad">See All</button> */}
 				</div>
 			</section>
 		);

@@ -62,3 +62,11 @@ body {
 	color: #fff;
 	text-decoration: none;
 }
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 10;
+}
