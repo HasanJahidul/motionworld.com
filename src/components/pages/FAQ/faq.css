@@ -1,0 +1,39 @@
+@media (min-width: 75em) {
+	._13mq9CSmDFMOUjJbS0ZoP3 {
+		display: block;
+	}
+}
+.Ao1QnxOuQHEPSPp3heabZ {
+	display: none;
+}
+*,
+:after,
+:before {
+	box-sizing: border-box;
+}
+user agent stylesheet div {
+	display: block;
+}
+
+*,
+:after,
+:before {
+	box-sizing: border-box;
+}
+*,
+:after,
+:before {
+	box-sizing: border-box;
+}
+#faq .gallery {
+	position: relative;
+	z-index: 1;
+	margin: 0 auto;
+	max-width: 900px;
+	text-align: center;
+}
+#faq {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}

@@ -1,34 +1,15 @@
 import React, { useState } from "react";
-import {
-  FaFacebookSquare,
-  FaInstagramSquare,
-  FaYoutubeSquare
-} from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
-import logo from '../../img/logo.png'
+import { Link } from "react-scroll";
+import logo from '../../img/logo.png';
 //import "./nav.css"
 import "./navbar.css";
-export const Navbar = () => {
-  const [showMediaIcons, setShowMediaIcons] = useState(false);
-    return (
-			//     <div>
-			//         <nav>
-			//   <input type="checkbox" id="check"/>
-			//   <label for="check" class="checkbtn">
-			//     <i class="fas fa-bars"></i>
-			//   </label>
-			//   <a className='biglogo' href='https://motionworldbd.com/'><img src={logo} className= 'logo'/></a>
-			//   <ul className = "items">
-			//     <li><a  href="#">Home</a></li>
-			//     <li><a href="#">About</a></li>
-			//     <li><a href="#">bites</a></li>
-			//     <li><a href="#">Contact</a></li>
-			//     <li><a className="btn-grad" href="#">get a qoute</a></li>
-			//   </ul>
 
-			// </nav>
-			//     </div>
+
+export const Navbar = () => {
+  const [ShowMenu, setShowMenu] = useState(false);
+    return (
 			<>
 				<div id="navbar">
 					<nav className="main-nav">
@@ -39,38 +20,77 @@ export const Navbar = () => {
 
 						{/* 2nd menu part  */}
 						<div
-							className={
-								showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
-							}
+							className={ShowMenu ? "menu-link mobile-menu-link" : "menu-link"}
 						>
 							<ul className="items">
 								<li>
-									<NavLink to="/">Home</NavLink>
+									<Link
+										activeClass="active"
+										to="home"
+										spy={true}
+										smooth={true}
+										offset={0}
+										duration={500}
+									>
+										home
+									</Link>
 								</li>
 								<li>
-									<NavLink to="/about">Work</NavLink>
+									<Link
+										activeClass="active"
+										to="work"
+										spy={true}
+										smooth={true}
+										offset={0}
+										duration={500}
+									>
+										work
+									</Link>
 								</li>
 								<li>
-									<NavLink to="/service">About</NavLink>
+									<Link
+										activeClass="active"
+										to="about"
+										spy={true}
+										smooth={true}
+										offset={0}
+										duration={500}
+									>
+										about
+									</Link>
 								</li>
 								<li>
-									<NavLink to="/contact">bites</NavLink>
+									<Link
+										activeClass="active"
+										to="bites"
+										spy={true}
+										smooth={true}
+										offset={0}
+										duration={500}
+									>
+										bites
+									</Link>
 								</li>
 								<li>
-									<NavLink to="/contact">contact</NavLink>
+									<Link
+										activeClass="active"
+										to="contact"
+										spy={true}
+										smooth={true}
+										offset={0}
+										duration={500}
+									>
+										contact
+									</Link>
 								</li>
 								<button className=" btn btn-grad">Get Yours</button>
 							</ul>
 						</div>
-
-						{/* 3rd social media links */}
-						<div className="social-media">
-							{/* hamburget menu start  */}
-							<div className="hamburger-menu">
-								<a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-									<GiHamburgerMenu />
-								</a>
-							</div>
+						{/* hamburget menu start  */}
+						<div className="hamburger-menu">
+							<a href="#" onClick={() => setShowMenu(!ShowMenu)}>
+								<GiHamburgerMenu />
+							</a>
 						</div>
 					</nav>
 				</div>

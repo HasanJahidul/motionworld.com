@@ -1,0 +1,21 @@
+#reviews:before {
+	content: '';
+    overflow: hidden;
+    position: absolute;
+    top: 40%;
+    bottom: 20%;
+   
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 100% 100% 100% 0% / 14% 37% 0% 91%  ;
+    transform: scaleX(1.1); 
+    
+     
+}
+#reviews .gallery {
+	position: relative;
+	z-index: 1;
+	margin: 0 auto;
+	max-width: 900px;
+}
